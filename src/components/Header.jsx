@@ -1,14 +1,17 @@
-import H1 from "./H1";
-import Background from "./Background";
+import { useItemsStore } from "../stores/itemsStore";
+import Counter from "./Counter";
+import Logo from "./Logo";
 
 export default function Header() {
+  const items = useItemsStore((state) => state.items);
+
   return (
     <header>
-      <Background />
-
-      <H1>
-        Word<span className="first-heading--thin">Analytics</span>
-      </H1>
+      <Logo />
+      <Counter
+        numberOfItemsPacked={items.filter((item) => item.packed).length}
+        totalNumberOfItems={items.length}
+      />
     </header>
   );
 }

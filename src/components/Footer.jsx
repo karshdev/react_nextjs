@@ -1,8 +1,10 @@
 export default function Footer() {
     return (
-      <footer className="footer">
-        <small>&copy; Copyright by ByteGrad. All rights reserved.</small>
-        <small>Last checked limits: 17 days ago</small>
+      <footer>
+        <small>&copy; 2050. Copyright by ByteGrad.</small>
+        <p>
+          Version <b>1.5</b>
+        </p>
       </footer>
     );
   }

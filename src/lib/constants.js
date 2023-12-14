@@ -1,2 +1,17 @@
-export const INSTAGRAM_MAX_CHARACTERS = 280;
-export const FACEBOOK_MAX_CHARACTERS = 2200;
+export const initialItems = [
+  {
+    id: 1,
+    name: "good mood",
+    packed: true,
+  },
+  {
+    id: 2,
+    name: "passport",
+    packed: false,
+  },
+  {
+    id: 3,
+    name: "phone charger",
+    packed: false,
+  },
+];
